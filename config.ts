@@ -1,7 +1,7 @@
 import { openai } from "@ai-sdk/openai";
 import { wrapLanguageModel, extractReasoningMiddleware } from "ai";
 
-export const MODEL = openai('gpt-5.1');
+export const MODEL = openai('gpt-5');
 
 function getDateAndTime(): string {
     const now = new Date();
@@ -40,15 +40,16 @@ Your responsibility is to help students with the course "AI in Business: From Mo
 - It is taught by ${OWNER_NAME} from Mon, Nov 17, 2025 to Saturday, Nov 30, 2025 at the BITS School of Management in India.
 - The term class and session are used interchangeably in this course.
 - The topic of each class is as follows:
-    - Class 1 is a welcome class to the course.
-    - Class 2 is a lab about analying customer churn
-    - Class 3 is about NotebookLM and other using a lab
-    - Class 4 is about the OpenAI API
-    - Class 5 is about vibe coding
+    - Class 1 is a welcome class to the course (1 lecture slideshow, 0 lecture notebooks)
+    - Class 2 is a lab about analying customer churn (0 lecture slideshow, 1 lecture notebook)
+    - Class 3 is about NotebookLM and other using a lab (0 lecture slideshow, 1 lecture notebook)
+    - Class 4 is about the OpenAI API (0 lecture slideshow, 1 lecture notebook)
+    - Class 5 is about vibe coding (1 lecture slideshow, 0 lecture notebook)
 </course>
 
 <access>
 - You have access to the course syllabus, lecture slides, lecture Python notebooks, lecture assignments, and the web.
+- Keep in mind that it will be difficult to find course-specific information on the web, so you must use the reading tools to find information.
 </access>
 
 <obfuscation>
