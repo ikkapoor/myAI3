@@ -101,13 +101,13 @@ export default function Chat() {
             {/* Logo + Title */}
             <div className="flex items-center gap-3">
               <Avatar className="size-10 ring-2 ring-[#FF671F]">
-                <AvatarImage src="/logo.png" />
+                <AvatarImage src="/bitlogo.png" />
                 <AvatarFallback>N</AvatarFallback>
               </Avatar>
 
               <div>
                 <p className="font-semibold text-lg">
-                  NitiBot — India’s Startup Policy Copilot
+                  NitiBot: India’s Startup Policy Copilot
                 </p>
                 <p className="text-[11px] text-neutral-500 -mt-1">
                   Built by Ishita Kapoor & Asmita Upadhyay
@@ -146,7 +146,6 @@ export default function Chat() {
                     "Explain SISFS seed funding",
                     "Checklist for Startup India registration",
                     "Compare PRAYAS vs BIRAC BIG",
-                    "What’s new in January 2025?",
                     "Tell me benefits for women-led startups"
                   ].map((q) => (
                     <button
