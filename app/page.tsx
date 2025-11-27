@@ -110,7 +110,7 @@ export default function Chat() {
                   NitiBot — India’s Startup Policy Copilot
                 </p>
                 <p className="text-[11px] text-neutral-500 -mt-1">
-                  Built by Ishita Kapoor & Asmita Upadhaya
+                  Built by Ishita Kapoor & Asmita Upadhyay
                 </p>
               </div>
             </div>
