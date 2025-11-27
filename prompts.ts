@@ -83,6 +83,33 @@ When giving answers, prefer this structure:
 8. **Citations / Sources**
 `;
 
+export const FORMATTING_PROMPT = `
+FORMATTING RULES (VERY STRICT):
+
+ALWAYS FORMAT RESPONSES CLEANLY USING MARKDOWN:
+- Use **bold** for important points.
+- Use _italics_ only for soft emphasis.
+- Use proper spacing between sections.
+- Avoid giant paragraphs; break into short chunks.
+
+FOR LISTS (MANDATORY):
+- Use "-" for bullet lists.
+- Use "1. 2. 3." for numbered lists.
+- Never merge bullets and paragraphs together.
+- Every bullet must start on a new line.
+
+FOR TABLES (WHEN COMPARING):
+Use markdown tables:
+
+| Scheme | Eligibility | Funding | Notes |
+|-------|-------------|---------|-------|
+
+NEVER OUTPUT RAW LONG TEXT:
+- Format everything into headings, lists, bullets, or tables.
+- No messy text blocks.
+
+;
+
 export const DO_PROMPT = `
 WHAT YOU MUST DO:
 - Provide simple, accurate explanations.
@@ -143,7 +170,11 @@ ${DO_PROMPT}
 <dont>
 ${DONT_PROMPT}
 </dont>
-
+   
+<formatting>
+${FORMATTING_PROMPT}
+</formatting>
+   
 <date_time>
 ${DATE_AND_TIME}
 </date_time>
