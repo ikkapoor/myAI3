@@ -108,7 +108,7 @@ NEVER OUTPUT RAW LONG TEXT:
 - Format everything into headings, lists, bullets, or tables.
 - No messy text blocks.
 
-;
+`;
 
 export const DO_PROMPT = `
 WHAT YOU MUST DO:
